@@ -1,6 +1,14 @@
-﻿using System;
+﻿/*Contains - Checks if the given value is in the array. This has a return type of bool.
+Remove - Removes the first value encountered in the array. The array must shrink accordingly. This has a return type of int[].
+RemoveAt - Removes the specific index of the array. The array must shrink accordingly. This has a return type of int[].
+Find - Locates the index of the first encountered value of the array. This has a return type of int. It should return -1 if it fails to locate the value.Contains - Checks if the given value is in the array. This has a return type of bool.*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,7 +44,7 @@ namespace OOP_2425_BaseCode
             foreach (int i in array)
                 Console.Write(i + "\t");
 
-            Console.WriteLine("\n\n");
+            
         }
 
         /// <summary>
@@ -56,5 +64,55 @@ namespace OOP_2425_BaseCode
 
             return newArray;
         }
+
+        static void Contains(int[] array, int value) //Contains
+        {
+            for (int x = 0; x < array.Length; x++)
+            {
+                counter++;
+
+                if (array[x] == userInput)
+                    return true;
+            }
+            return -1;
+        }
+
+       
+        {
+            
+            Console.WriteLine();
+            Console.WriteLine(" ");
+            Console.WriteLine();
+
+            if (subscript == -1)
+                Console.WriteLine("{0} is NOT in array, # of comparisons is {1}",
+                    userInput, counter);
+            else
+                Console.WriteLine("{0} {1}", int[NewArrayExpression];
+        }
+    }
+    
+
+        static void Remove()(int[] array, int value)//Remove
+        {
+    int[] array = NewArrayExpression [array.length];
+    for (int i = 0; i < NewArrayExpression.length; i++)
+    {
+        if (array[i] == int)
+            break;
+    }
+
+    return NewArrayExpression;
+}
+        static void RemoveAt()(int[] array, int value)//RemoveAt
+        {
+           
+        }
+        static void Find()(int[] array, int value)//Find
+        {
+           
+
+        }
+
     }
 }
